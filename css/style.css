@@ -5,6 +5,8 @@
     --softext: #4c4c4c;
     /* margin padding values */
     --big-top-margin: 30px 0px;
+    /* font sizes */
+    --category-title-text: 18px;
 }
 
 * {
@@ -18,8 +20,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 3fr 1.5fr;
-    grid-template-rows: 2;
+    grid-template-columns: 3fr 1fr;
     margin: 4% 7%;
     background-color: var(--background);
 }
@@ -78,17 +79,21 @@ body {
     align-content: flex-start;
     margin: var(--big-top-margin);
 }
-.navbar__item {
+.navbar a {
+    display: block;
     border: 1px solid var(--secondary-color);
     border-radius: 50px;
+    color: var(--softext);
     font-family: 'Nunito', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     margin: 0px 7px 9px 7px;
+    padding: 1px 10px;
+    transition: background-color .4s ease
 }
-.navbar__item a {
-    color: black;
-    padding: 7px 15px;
+.navbar a:hover {
+    color: white;
+    background-color: var(--secondary-color);
 }
 
 /* social media items */
@@ -113,4 +118,57 @@ body {
 .smedia img {
     display: block;
     width: 30px;
+}
+
+/* Tabs and search input */
+#tabs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.tabs__button  {
+    color: black;
+    border-radius: 25px;
+    margin: 0px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: var(--category-title-text);
+    padding: 0px 10px;
+    transition: background-color .4s ease;
+}
+.tabs__button--active {
+    color: white;
+    background-color: var(--secondary-color);
+}
+.tabs__button:hover {
+    color: white;
+    background-color: #8bc9f8;
+}
+
+/* search button */
+#search {
+    padding-left: 20px;
+}
+#search__wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2px 10px;
+    box-shadow: 0px 2px 5px darkgrey;
+}
+#search__wrap input {
+    background-color: white;
+    flex-grow: 5;
+    flex-shrink: 5;
+    padding: 0px 5px;
+    width: 0px;
+    height: 20px;
+}
+#search__wrap img {
+    width: 15px;
+    height: 15px;
 }

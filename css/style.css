@@ -2,7 +2,8 @@
     --primary-color: #005ea6;
     --secondary-color: #1894f2;
     --background: #f1f1f1;
-    --softext: #4c4c4c;
+    --softext: #5c4c4c;
+    --soft-shadow: #d6d6d6;
     /* margin padding values */
     --big-top-margin: 30px 0px;
     /* font sizes */
@@ -39,17 +40,17 @@ body {
     align-items: center;
     justify-content: space-between;
     color: var(--primary-color);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
 }
 #header__brand img {
     /* border: 1px solid red; */
     width: 38px;
 }
 #header__brand h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
     margin-left: 10px;
-    font-size: 30px;
-    /* border: 1px solid red; */
+    text-shadow: 0px 2px 5px var(--soft-shadow);
 }
 
 #hamburger {
@@ -171,4 +172,83 @@ body {
 #search__wrap img {
     width: 15px;
     height: 15px;
+}
+
+/* Cards (main) and sidebar */
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 40px 10px;
+}
+
+.article {
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 2px 6px lightgrey;
+    font-family: 'Nunito', sans-serif;
+    width: 250px;
+}
+.article .info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.article h6 {
+    font-weight: 400;
+    font-size: 12px;
+}
+.article__header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(../img/unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+    color: white;
+    height: 160px;
+    padding: 12px;
+}
+.article__header img {
+    width: 12px;
+    margin-right: 4px;
+}
+.article__header h6 {
+    text-shadow: 0px 1px 4px var(--softext);
+}
+.article__center {
+    padding: 12px;
+    padding-top: 16px;
+}
+.article__title {
+    color: var(--primary-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+}
+.article__text {
+    color: var(--softext);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    /* line-height: 1.5; */
+    margin-top: 4px;
+}
+.article__footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: var(--softext);
+    padding: 0 12px;
+    padding-bottom: 16px;
+}
+.article__footer img {
+    width: 12px;
+}
+.article__footer img:first-child {
+    margin-right: 4px;
+}
+.article__footer img:last-child {
+    margin-left: 4px;
 }

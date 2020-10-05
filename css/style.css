@@ -177,8 +177,10 @@ body {
 main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 40px 0;
+    padding-bottom: 20px;
+    
 }
 
 .post {
@@ -327,4 +329,28 @@ main {
     color: var(--softext);
     font-style: italic;
     font-weight: 600;
+}
+
+/* post-navigation */
+.post-navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.post-navigation > a {
+    color: var(--secondary-color);
+    margin: 0 5px;
+    font-size: .9rem;
+}
+.post-navigation #index--active, .post-navigation a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.post-navigation img:first-child {
+    transform: rotate(180deg);
+}
+.post-navigation img {
+    width: 25px;
+    margin: 5px;
 }

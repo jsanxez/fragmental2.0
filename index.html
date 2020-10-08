@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog sobre temas relacionados con las ciencias de la computacion y mas">
+    <title>Fragmental! the best computer science blog</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Noto+Sans&family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragmental! the best computer science blog</title>
 </head>
 
 <body>
@@ -64,7 +65,7 @@
     </div>
     <div id="search">
         <div id="search__wrap">
-            <input type="search" name="search" placeholder="Search...">
+            <input type="search" name="search" placeholder="Search..." aria-label="search">
             <img src="img/loupe.svg" alt="loupe">
         </div>
     </div>
@@ -352,22 +353,38 @@
         </section>
         <section class="sidebar__widget">
             <h3>Categorías</h3>
-            <ul>
-                <span class="widget__item"><li>Libros</li><a href="#">28</a></span>
-                <span class="widget__item"><li>Manuales</li><a href="#">15</a></span>
-                <span class="widget__item"><li>Proyectos</li><a href="#">03</a></span>
-                <span class="widget__item"><li>Herramientas</li><a href="#">07</a></span>
-                <span class="widget__item"><li>Ahora</li></span>
-            </ul>
+            <nav class="widget__items-wrapper">
+                <ul class="widget__item">
+                    <li>Libros</li>
+                    <li>Manuales</li>
+                    <li>Proyectos</li>
+                    <li>Herramientas</li>
+                    <li>Ahora</li>
+                </ul>
+                <span class="widget__item__value">
+                    <a href="#">28</a>
+                    <a href="#">15</a>
+                    <a href="#">03</a>
+                    <a href="#">07</a>
+                </span>
+            </nav>
         </section>
         <section class="sidebar__widget">
             <h3>Archivos</h3>
-            <ul>
-                <span class="widget__item"><li>2020</li><a href="#">117</a></span>
-                <span class="widget__item"><li>2019</li><a href="#">120</a></span>
-                <span class="widget__item"><li>2018</li><a href="#">105</a></span>
-                <span class="widget__item"><li>2017</li><a href="#">103</a></span>
-            </ul>
+            <nav class="widget__items-wrapper">
+                <ul class="widget__item">
+                    <li>2020</li>
+                    <li>2019</li>
+                    <li>2018</li>
+                    <li>2017</li>
+                </ul>
+                <span class="widget__item__value">
+                    <a href="#">117</a>
+                    <a href="#">120</a>
+                    <a href="#">105</a>
+                    <a href="#">103</a>
+                </span>
+            </nav>
         </section>
     </aside>
     <div class="post-navigation">

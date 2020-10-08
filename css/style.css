@@ -5,7 +5,7 @@
     --softext: #5c4c4c;
     --soft-shadow: #d6d6d6;
     /* Gaps */
-    --col-gap: 2vw;
+    --col-gap: 20px;
     --row-gap: 5vh;
 }
 
@@ -31,7 +31,7 @@ body {
     font-size: 100%;
     margin: auto;
     margin-bottom: 0;
-    max-width: 1440px;
+    max-width: 1250px;
 }
 
 #header {
@@ -180,9 +180,8 @@ body {
 main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    /* align-content: space-between; */
-    /* align-items: flex-start; */
+    justify-content: center;
+    align-content: flex-start;
 }
 
 .post {
@@ -191,10 +190,10 @@ main {
     box-shadow: 0px 2px 6px var(--soft-shadow);
     font-family: 'Nunito', sans-serif;
     /* min-width: 220px;
-    max-width: 250px; */
-    /* width: calc(98%/3);*/
+    max-width: 270px; */
     width: 270px;
-    margin-bottom: 2vw;
+    margin: 0 .5vw;
+    margin-bottom: 1vw;
 }
 .post__header {
     position: relative;
@@ -283,8 +282,8 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 0 2vw;
-    padding-bottom: 2vw;
+    padding: 0 var(--col-gap);
+    padding-bottom: var(--col-gap);
 }
 #about .about__image {
     display: block;
@@ -311,7 +310,7 @@ main {
     border-radius: 4px;
     box-shadow: 0px 2px 6px var(--soft-shadow);
     padding: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 }
 .sidebar__widget h3 {
     font-size: 1rem;
@@ -340,7 +339,7 @@ main {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: -2vw;
+    margin-top: -0.8vw;
     
 }
 .post-navigation > a {

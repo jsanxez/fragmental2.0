@@ -424,7 +424,17 @@ footer.main-post__element img:first-child {
     margin-top: -0.8vw;
     
 }
-.post-navigation > a {
+/* postpage post-navigation */
+.post-page__post-navigation {
+    justify-content: space-between;
+}
+.post-page__post-navigation span {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+/* -- */
+.post-navigation a {
     color: var(--secondary-color);
     margin: 0 5px;
     font-size: .9rem;

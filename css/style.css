@@ -433,6 +433,13 @@ footer.main-post__element img:first-child {
     flex-flow: row wrap;
     align-items: center;
 }
+.post-page__post-navigation span a {
+    color: black;
+}
+.post-page__post-navigation span a:hover {
+    color: black;
+    font-weight: 400;
+}
 /* -- */
 .post-navigation a {
     color: var(--secondary-color);
@@ -450,19 +457,76 @@ footer.main-post__element img:first-child {
     width: 25px;
 }
 
+/* Comments section */
+#comments-section {
+    grid-column: 1/2;
+    /* background: pink; */
+}
+#comments-section__title {
+    color: var(--primary-color);
+    font-size: .9rem;
+    font-weight: 600;
+}
+.comment-wrapper {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: calc(var(--row-gap)/2);
+}
+.comment-wrapper--answer {
+    margin-left: 55px;
+}
+.comment-wrapper .comment-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.comment-wrapper__content {
+    /* border: 1px solid red; */
+}
+.comment-wrapper__content p {
+    color: var(--softext);
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+.comment-wrapper__details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.comment-wrapper__details div {
+    display: flex;
+    flex-flow: column wrap;
+}
+.comment-wrapper__details div span {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.comment-wrapper__details div time {
+    color: var(--secondary-color);
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.comment-wrapper__details img {
+    width: 15px;
+    height: 15px;
+}
 /* footer */
 #footer {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column: 1/3;
     grid-column-gap: var(--col-gap);
+    border-top: 1px solid var(--soft-shadow);
 }
 .footer-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--soft-shadow);
     padding: 40px 0;
 }
 .footer__brand {

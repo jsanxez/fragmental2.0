@@ -467,6 +467,15 @@ footer.main-post__element img:first-child {
     font-size: .9rem;
     font-weight: 600;
 }
+#comments-section textarea {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px var(--soft-shadow);
+    font-family: 'Nunito', sans-serif;
+    resize: none;
+    padding: 2px 10px;
+    margin-top: calc(var(--row-gap)/2);
+}
 .comment-wrapper {
     display:flex;
     flex-flow: row nowrap;

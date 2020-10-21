@@ -276,28 +276,56 @@ footer.main-post__element img:first-child {
     /* min-width: 220px;
     max-width: 270px; */
     width: 270px;
+}
+.post-card {
     margin: 0 .5vw;
     margin-bottom: 1vw;
 }
-.post__header {
+.suggested-post {
+    margin: 0 .5vw;
+}
+.suggested-post:first-child {
+    margin-left: 0;
+}
+.suggested-post:last-child {
+    margin-right: 0;
+}
+.post-header {
     position: relative;
     background-color: lightblue;
-    border-radius: 4px 4px 0 0;
     color: white;
     font-size: 0.7rem;
     height: 170px;
 }
-.post__thumb {
+.post-header-main {
     border-radius: 4px 4px 0 0;
+}
+.post-header-suggested {
+    border-radius: 4px;
+}
+/* suggested cards */
+.post-header__title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    padding: 10px 18px;
+}
+.post__thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.post-meta__author {
-    left: 18px;
+.post__thumb-main {
+    border-radius: 4px 4px 0 0;
 }
-.post-meta__date {
-    right: 18px;
+.post__thumb-suggested {
+    border-radius: 4px;
 }
 .post-meta__author, .post-meta__date {
     display: flex;
@@ -305,6 +333,12 @@ footer.main-post__element img:first-child {
     align-items: center;
     position: absolute;
     bottom: 10px;
+}
+.post-meta__author {
+    left: 18px;
+}
+.post-meta__date {
+    right: 18px;
 }
 .post-meta__author img, .post-meta__date img {
     width: 1.1em;
@@ -462,7 +496,7 @@ footer.main-post__element img:first-child {
     grid-column: 1/2;
     /* background: pink; */
 }
-#comments-section__title {
+.section__title {
     color: var(--primary-color);
     font-size: .9rem;
     font-weight: 600;
@@ -483,17 +517,17 @@ footer.main-post__element img:first-child {
     margin-top: calc(var(--row-gap)/2);
 }
 .comment-wrapper--answer {
-    margin-left: 55px;
+    margin-left: 40px;
 }
 .comment-wrapper .comment-avatar {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     object-fit: cover;
     margin-right: 5px;
 }
 .comment-wrapper__content {
-    /* border: 1px solid red; */
+    width: 100%;
 }
 .comment-wrapper__content p {
     color: var(--softext);
@@ -522,6 +556,17 @@ footer.main-post__element img:first-child {
 .comment-wrapper__details img {
     width: 15px;
     height: 15px;
+}
+/* Suggested posts */
+#suggested-section {
+    grid-column: 1/2;
+    /* background-color: pink; */
+}
+.post-card__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: calc(var(--row-gap)/2);
 }
 /* footer */
 #footer {

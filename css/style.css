@@ -117,13 +117,13 @@ body {
     margin-left: 15px;
 }
 .smedia a:first-child {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     box-shadow: 0px 2px 5px darkgrey;
 }
 .smedia img {
     display: block;
-    width: 30px;
+    width: 25px;
 }
 
 /* Tabs and search input */
@@ -617,11 +617,12 @@ footer.main-post__element img:first-child {
     justify-content: flex-end;
     align-content: center;
 }
-#footer .smedia img {
+/* #footer .smedia img {
     width: 25px;
 }
-.smedia a:first-child {
+
+footer .smedia a:first-child {
     width: 25px;
     height: 25px;
     box-shadow: 0px 2px 5px darkgrey;
-}
+} */

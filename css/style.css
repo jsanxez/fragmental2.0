@@ -295,7 +295,7 @@ footer.main-post__element img:first-child {
     background-color: lightblue;
     color: white;
     font-size: 0.7rem;
-    height: 170px;
+    height: 130px;
 }
 .post-header-main {
     border-radius: 4px 4px 0 0;
@@ -312,8 +312,8 @@ footer.main-post__element img:first-child {
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 800;
+    font-size: 0.9rem;
+    font-weight: 600;
     padding: 10px 18px;
 }
 .post__thumb {

@@ -383,6 +383,9 @@ footer.main-post__element img:first-child {
     flex-flow: row nowrap;
     align-items: center;
 }
+.post-meta__tags a:hover {
+    color: var(--primary-color);
+}
 .post-footer img {
     width: 12px;
     margin-right: 4px;

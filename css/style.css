@@ -181,7 +181,7 @@ body {
 main.index-main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-content: flex-start;
 }
 /* post page */
@@ -270,12 +270,11 @@ footer.main-post__element img:first-child {
 
 /* cards */
 .post {
+    flex-grow: 1;
     border-radius: 4px;
     background-color: white;
     box-shadow: 0px 2px 6px var(--soft-shadow);
     font-family: 'Nunito', sans-serif;
-    /* min-width: 220px;
-    max-width: 270px; */
     width: 260px;
 }
 .post-card {

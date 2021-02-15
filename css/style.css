@@ -283,12 +283,14 @@ footer.main-post__element img:first-child {
 }
 .suggested-post {
     margin: 0 .5vw;
+    margin-bottom: 1vw;
 }
 .suggested-post:first-child {
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 .suggested-post:last-child {
-    margin-right: 0;
+    /* margin-right: 0; */
+    margin-bottom: 0;
 }
 .post-header {
     position: relative;
@@ -569,6 +571,7 @@ footer.main-post__element img:first-child {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
     margin-top: calc(var(--row-gap)/2);
 }
 /* up arrow container */

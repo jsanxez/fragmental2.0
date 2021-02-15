@@ -178,14 +178,14 @@ body {
 }
 
 /* Cards (main) */
-main.index-main {
+main.main-index {
     display: flex;
     flex-flow: row wrap;
     /* justify-content: center; */
     align-content: flex-start;
 }
 /* post page */
-main.post-main {
+main.main-post {
     background: white;
     border-radius: 4px;
     margin-bottom: 1vw;
@@ -221,7 +221,7 @@ footer.main-post__element a {
 footer.main-post__element img:first-child {
     margin-right: 4px;
 }
-#post-main__article {
+#main-post__article {
     font-family: 'Noto Sans', sans-serif;
     font-size: 0.9rem;
     line-height: 1.5;

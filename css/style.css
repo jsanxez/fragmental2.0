@@ -633,3 +633,25 @@ footer .smedia a:first-child {
     height: 25px;
     box-shadow: 0px 2px 5px darkgrey;
 } */
+
+
+/* --------------------- media  queries -------------- */
+
+@media screen and (max-width: 600px) {
+body {
+    display: block;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: var(--col-gap);
+    grid-row-gap: var(--row-gap);
+    /* background-color: lightyellow; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    margin: auto;
+    margin-bottom: 0;
+    max-width: 1250px;
+}
+}
+
+@media screen and (max-width: 200px) {
+
+}

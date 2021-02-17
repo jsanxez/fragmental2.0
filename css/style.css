@@ -1,12 +1,17 @@
 :root {
+    /* colours */
     --primary-color: #005ea6;
     --secondary-color: #1894f2;
     --background: #f1f1f1;
     --softext: #4c4c4c;
     --soft-shadow: #d6d6d6;
     /* Gaps */
-    --col-gap: 20px;
-    --row-gap: 5vh;
+    /* --col-gap: 20px; */
+    --col-gap: 5vh;
+    --row-gap: 8vh;
+    /* borders, margins and paddings */
+    --card-imargin: 18px;
+    --full-rimargin: 4vw 7vw;
 }
 
 * {
@@ -18,7 +23,7 @@
     box-sizing: border-box;
 }
 html {
-    padding: 4vw 7vw;
+    padding: var(--full-rimargin);
     padding-bottom: 0;
 }
 body {
@@ -277,14 +282,11 @@ footer.main-post__element img:first-child {
     font-family: 'Nunito', sans-serif;
     width: 260px;
 }
-.post-card {
+.post-card, .suggested-post {
     margin: 0 .5vw;
     margin-bottom: 1vw;
 }
-.suggested-post {
-    margin: 0 .5vw;
-    margin-bottom: 1vw;
-}
+
 .suggested-post:first-child {
     /* margin-left: 0; */
 }
@@ -316,7 +318,7 @@ footer.main-post__element img:first-child {
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 600;
-    padding: 10px 18px;
+    padding: 10px var(--card-imargin);
 }
 .post__thumb {
     width: 100%;
@@ -337,10 +339,10 @@ footer.main-post__element img:first-child {
     bottom: 10px;
 }
 .post-meta__author {
-    left: 18px;
+    left: var(--card-imargin);
 }
 .post-meta__date {
-    right: 18px;
+    right: var(--card-imargin);
 }
 .post-meta__author img, .post-meta__date img {
     width: 1.1em;
@@ -351,8 +353,7 @@ footer.main-post__element img:first-child {
     text-shadow: 0px 1px 2px var(--softext);
 }
 .post-text {
-    padding: 18px;
-    padding-top: 16px;
+    padding:var(--card-imargin);
     cursor: pointer;
 }
 .post-text__title {
@@ -373,8 +374,8 @@ footer.main-post__element img:first-child {
     flex-flow: row nowrap;
     justify-content: space-between;
     font-size: 0.7rem;
-    padding: 0 18px;
-    padding-bottom: 16px;
+    padding: 0 var(--card-imargin);
+    padding-bottom: var(--card-imargin);
 }
 .post-footer a {
     color: var(--softext);

@@ -6,8 +6,7 @@
     --softext: #4c4c4c;
     --soft-shadow: #d6d6d6;
     /* Gaps */
-    /* --col-gap: 20px; */
-    --col-gap: 4vh;
+    --col-gap: 4vh; /*20px*/
     --row-gap: 6vh;
     /* borders, margins and paddings */
     --card-padding: 18px;
@@ -591,6 +590,7 @@ footer.main-post__element img:first-child {
 .up-arrow-wrapper img {
     width: 35px;
 }
+
 /* footer */
 #footer {
     display: grid;
@@ -624,6 +624,7 @@ footer.main-post__element img:first-child {
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: center;
+    padding: 40px 0;
 }
 /* #footer .smedia img {
     width: 25px;
@@ -643,8 +644,10 @@ footer .smedia a:first-child {
         display: block;
     }
 
-    .navbar, .smedia, #tabs, #search__wrap, main, #sidebar, .post-navigation,
-    #comments-section, #suggested-section, .up-arrow-container, #footer { margin-top: var(--row-gap);
+    .navbar, .header-smedia, #tabs, #search__wrap, main, #sidebar,
+    .post-navigation, #comments-section, #suggested-section,
+    .up-arrow-container, #footer {
+        margin-top: var(--row-gap);
     }
 
     .post-card:last-child, .suggested-post:last-child {
@@ -654,12 +657,7 @@ footer .smedia a:first-child {
     .sidebar__widget:last-child {
         margin-bottom: 0;
     }
-
-    #footer {
-        display: block;
-    }
-
 }
-@media screen and (max-width: 200px) {
 
+@media screen and (max-width: 200px) {
 }

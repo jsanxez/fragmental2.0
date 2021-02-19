@@ -288,7 +288,7 @@ footer.main-post__element img:first-child {
     /* margin-right: 0; */
     margin-bottom: 0;
 }
-.post-header {
+.card-header {
     position: relative;
     background-color: lightblue;
     color: white;
@@ -314,56 +314,56 @@ footer.main-post__element img:first-child {
     font-weight: 600;
     padding: 10px var(--card-padding);
 }
-.post__thumb {
+.card__thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.post__thumb-main {
+.card__thumb-main {
     border-radius: 4px 4px 0 0;
 }
-.post__thumb-suggested {
+.card__thumb-suggested {
     border-radius: 4px;
 }
-.post-meta__author, .post-meta__date {
+.card-meta__author, .card-meta__date {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     position: absolute;
     bottom: 10px;
 }
-.post-meta__author {
+.card-meta__author {
     left: var(--card-padding);
 }
-.post-meta__date {
+.card-meta__date {
     right: var(--card-padding);
 }
-.post-meta__author img, .post-meta__date img {
+.card-meta__author img, .card-meta__date img {
     width: 1.1em;
     margin-right: 4px;
 }
-.post-meta__author span, .post-meta__date span {
+.card-meta__author span, .card-meta__date span {
     font-weight: 300;
     text-shadow: 0px 1px 2px var(--softext);
 }
-.post-text {
+.card-text {
     padding:var(--card-padding);
     cursor: pointer;
 }
-.post-text__title {
+.card-text__title {
     color: var(--primary-color);
     font-family: 'Fira Sans', sans-serif;
     font-size: 0.85rem;
     font-weight: 500;
 }
-.post-text p {
+.card-text p {
     color: var(--softext);
     font-family: 'Noto Sans', sans-serif;
     font-size: 0.8rem;
     line-height: 1.5;
     margin-top: 4px;
 }
-.post-footer {
+.card-footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -371,18 +371,18 @@ footer.main-post__element img:first-child {
     padding: 0 var(--card-padding);
     padding-bottom: var(--card-padding);
 }
-.post-footer a {
+.card-footer a {
     color: var(--softext);
 }
-.post-meta__tags, .post-meta__comments {
+.card-footer__tags, .card-footer__comments {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-.post-meta__tags a:hover {
+.card-footer__tags a:hover {
     color: var(--primary-color);
 }
-.post-footer img {
+.card-footer img {
     width: 12px;
     margin-right: 4px;
 }

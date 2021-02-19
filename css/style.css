@@ -644,12 +644,17 @@ footer .smedia a:first-child {
         display: block;
     }
 
+    /* margins instead of grid gaps */
     .navbar, .header-smedia, #tabs, #search__wrap, main, #sidebar,
     .post-navigation, #comments-section, #suggested-section,
     .up-arrow-container, #footer {
         margin-top: var(--row-gap);
     }
-
+    /* horizontal card margins */
+    .post-card, .suggested-post {
+        margin: 0;
+        margin-bottom: var(--card-rmargin);
+    }
     .post-card:last-child, .suggested-post:last-child {
         margin-bottom: 0;
     }

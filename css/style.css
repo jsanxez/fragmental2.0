@@ -643,8 +643,8 @@ footer .smedia a:first-child {
         display: block;
     }
 
-    .navbar, .smedia, #tabs, #search__wrap, .main-index, #sidebar, .post-navigation, #footer {
-        margin-top: var(--row-gap);
+    .navbar, .smedia, #tabs, #search__wrap, main, #sidebar, .post-navigation,
+    #comments-section, #suggested-section, .up-arrow-container, #footer { margin-top: var(--row-gap);
     }
 
     .post-card:last-child, .suggested-post:last-child {

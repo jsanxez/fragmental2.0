@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <!-- article -->
+    <!-- main (article) -->
     <main class="main-post">
         <header class="main-post__element">
             <span>
@@ -122,6 +122,7 @@
             <img src="img/share.svg" alt="share icon">
         </footer>
     </main>
+
     <!-- sidebar  -->
     <aside id="sidebar">
         <section id="about">
@@ -167,6 +168,8 @@
             </nav>
         </section>
     </aside>
+    <!-- end sidebar -->
+
     <div class="post-navigation post-page__post-navigation">
         <span>
             <img src="img/arrow.svg" alt="previous arrow">
@@ -179,10 +182,10 @@
     </div>
     <!-- Comments section -->
     <section id="comments-section">
-        <span class="comments-section__title section__title">4 comentarios</span>
+        <span class="section__title">4 comentarios</span>
         <div class="comment-wrapper">
-            <img class="comment-avatar" src="img/spaceman.jpg" alt="comment avatar">
-            <div class="comment-wrapper__content">
+            <img class="comment-wrapper__avatar" src="img/spaceman.jpg" alt="comment avatar">
+            <div class="comment-wrapper__text">
                 <div class="comment-wrapper__details">
                     <div>
                         <span>John Doe</span>
@@ -198,8 +201,8 @@
             </div>
         </div>
         <div class="comment-wrapper comment-wrapper--answer">
-            <img class="comment-avatar" src="img/spaceman.jpg" alt="comment avatar">
-            <div class="comment-wrapper__content">
+            <img class="comment-wrapper__avatar" src="img/spaceman.jpg" alt="comment avatar">
+            <div class="comment-wrapper__text">
                 <div class="comment-wrapper__details">
                     <div>
                         <span>John Doe</span>
@@ -215,8 +218,8 @@
             </div>
         </div>
         <div class="comment-wrapper">
-            <img class="comment-avatar" src="img/spaceman.jpg" alt="comment avatar">
-            <div class="comment-wrapper__content">
+            <img class="comment-wrapper__avatar" src="img/spaceman.jpg" alt="comment avatar">
+            <div class="comment-wrapper__text">
                 <div class="comment-wrapper__details">
                     <div>
                         <span>John Doe</span>
@@ -234,11 +237,12 @@
         <textarea name="comment" id="comment" cols="30" rows="2" title="Escribir comentario..." placeholder="Escribir comentario..."></textarea>
     </section>
     <!-- end Comments section -->
-    <!-- suggested posts section -->
+
+    <!-- suggested articles section -->
     <section id="suggested-section">
         <span class="section__title">Post sugeridas</span>
-        <div class="post-card__wrapper">
-            <article class="post suggested-post">
+        <div class="suggested-card-container">
+            <article class="card suggested-post">
                 <div class="post-header post-header-suggested">
                     <img class="post__thumb post__thumb-suggested" src="img/screen-post.jpg" alt="post image">
                     <h2 class="post-header__title">Fundamentos basicos en linux core parte I - III</h2>
@@ -252,7 +256,7 @@
                     </div>
                 </div>
             </article>
-            <article class="post suggested-post">
+            <article class="card suggested-post">
                 <div class="post-header post-header-suggested">
                     <img class="post__thumb post__thumb-suggested" src="img/gnu.jpeg" alt="post image">
                     <h2 class="post-header__title">Fundamentos basicos en linux core parte I - III</h2>
@@ -266,7 +270,7 @@
                     </div>
                 </div>
             </article>
-            <article class="post suggested-post">
+            <article class="card suggested-post">
                 <div class="post-header post-header-suggested">
                     <img class="post__thumb post__thumb-suggested" src="img/ilya-pavlov.jpg" alt="post image">
                     <h2 class="post-header__title">Fundamentos basicos en linux core parte I - III</h2>

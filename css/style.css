@@ -230,7 +230,6 @@ footer.main-post__element img:first-child {
     line-height: 1.5;
     text-align: justify;
     padding: 35px;
-    /* border: 1px solid red; */
 }
 #article__title {
     color: var(--primary-color);
@@ -272,7 +271,7 @@ footer.main-post__element img:first-child {
 }
 
 /* cards */
-.post {
+.card {
     flex-grow: 1;
     border-radius: 4px;
     background-color: white;
@@ -280,14 +279,11 @@ footer.main-post__element img:first-child {
     font-family: 'Nunito', sans-serif;
     width: 260px;
 }
-.post-card, .suggested-post {
+.article-card, .suggested-post {
     margin: 0 calc(var(--card-rmargin)/2);
     margin-bottom: var(--card-rmargin);
 }
 
-.suggested-post:first-child {
-    /* margin-left: 0; */
-}
 .suggested-post:last-child {
     /* margin-right: 0; */
     margin-bottom: 0;
@@ -497,24 +493,17 @@ footer.main-post__element img:first-child {
     width: 25px;
 }
 
-/* Comments section */
-#comments-section {
-    grid-column: 1/2;
-    /* background: pink; */
-}
+/* For all the section titles */
 .section__title {
     color: var(--primary-color);
     font-size: .9rem;
     font-weight: 600;
 }
-#comments-section textarea {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0px 2px 5px var(--soft-shadow);
-    font-family: 'Nunito', sans-serif;
-    resize: none;
-    padding: 2px 10px;
-    margin-top: calc(var(--row-gap)/2);
+
+/* Comments section */
+#comments-section {
+    grid-column: 1/2;
+    /* background: pink; */
 }
 .comment-wrapper {
     display:flex;
@@ -525,17 +514,17 @@ footer.main-post__element img:first-child {
 .comment-wrapper--answer {
     margin-left: 40px;
 }
-.comment-wrapper .comment-avatar {
+.comment-wrapper__avatar {
     border-radius: 50%;
     width: 35px;
     height: 35px;
     object-fit: cover;
     margin-right: 5px;
 }
-.comment-wrapper__content {
+.comment-wrapper__text {
     width: 100%;
 }
-.comment-wrapper__content p {
+.comment-wrapper__text p {
     color: var(--softext);
     font-size: 0.8rem;
     margin-top: 4px;
@@ -563,11 +552,21 @@ footer.main-post__element img:first-child {
     width: 15px;
     height: 15px;
 }
+#comments-section textarea {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px var(--soft-shadow);
+    font-family: 'Nunito', sans-serif;
+    resize: none;
+    padding: 2px 10px;
+    margin-top: calc(var(--row-gap)/2);
+}
+
 /* Suggested posts */
 #suggested-section {
     grid-column: 1/2;
 }
-.post-card__wrapper {
+.suggested-card-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -651,11 +650,11 @@ footer .smedia a:first-child {
         margin-top: var(--row-gap);
     }
     /* horizontal card margins */
-    .post-card, .suggested-post {
+    .article-card, .suggested-post {
         margin: 0;
         margin-bottom: var(--card-rmargin);
     }
-    .post-card:last-child, .suggested-post:last-child {
+    .article-card:last-child, .suggested-post:last-child {
         margin-bottom: 0;
     }
 

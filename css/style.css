@@ -279,30 +279,30 @@ footer.main-post__element img:first-child {
     font-family: 'Nunito', sans-serif;
     width: 260px;
 }
-.article-card, .suggested-post {
+.article-card, .suggested-card {
     margin: 0 calc(var(--card-rmargin)/2);
     margin-bottom: var(--card-rmargin);
 }
 
-.suggested-post:last-child {
+.suggested-card:last-child {
     /* margin-right: 0; */
     margin-bottom: 0;
 }
 .card-header {
     position: relative;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     color: white;
     font-size: 0.7rem;
     height: 130px;
 }
-.post-header-main {
+.card-header-main {
     border-radius: 4px 4px 0 0;
 }
-.post-header-suggested {
+.card-header-suggested {
     border-radius: 4px;
 }
 /* suggested cards */
-.post-header__title {
+.card-header__title {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -650,11 +650,11 @@ footer .smedia a:first-child {
         margin-top: var(--row-gap);
     }
     /* horizontal card margins */
-    .article-card, .suggested-post {
+    .article-card, .suggested-card {
         margin: 0;
         margin-bottom: var(--card-rmargin);
     }
-    .article-card:last-child, .suggested-post:last-child {
+    .article-card:last-child, .suggested-card:last-child {
         margin-bottom: 0;
     }
 

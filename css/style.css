@@ -389,6 +389,8 @@ footer.main-post__element img:first-child {
 
 /* Sidebar */
 #sidebar {
+    grid-column: 2/3;
+    grid-row: 4/5;
     color: var(--primary-color);
     font-size: .9rem;
 }

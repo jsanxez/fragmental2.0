@@ -134,14 +134,15 @@ body {
 /* Tabs and search input */
 #tabs {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     align-items: flex-start;
+    padding: 0 25%;
 }
 .tabs__button  {
     color: black;
     border-radius: 25px;
-    margin: 0px 20px;
+    margin: 0px var(--card-rmargin);
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 1rem;

@@ -6,8 +6,8 @@
     --softext: #4c4c4c;
     --soft-shadow: #d6d6d6;
     /* Gaps */
-    --col-gap: 4vh; /*20px*/
-    --row-gap: 6vh;
+    --col-gap: 4vh; /* 20px or 4vh */
+    --row-gap: 6vh; /* 6vh */
     /* borders, margins and paddings */
     --card-padding: 18px;
     --full-rpadding: 4vw 7vw;
@@ -621,13 +621,13 @@ footer.post__element img:first-child {
     grid-column: 1/3;
     grid-column-gap: var(--col-gap);
     border-top: 1px solid var(--soft-shadow);
+    padding: 40px 0;
 }
 .footer-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
 }
 .footer__brand {
     color: var(--primary-color);
@@ -647,7 +647,6 @@ footer.post__element img:first-child {
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: center;
-    padding: 40px 0;
 }
 #footer .smedia a:first-child {
     /* margin-bottom: 5px; */

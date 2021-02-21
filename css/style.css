@@ -478,8 +478,23 @@ footer.post__element img:first-child {
     justify-content: center;
     align-items: center;
     /* margin-top: -0.8vw; */
-    
 }
+.navigation img {
+    width: 25px;
+}
+.navigation a {
+    color: var(--secondary-color);
+    margin: 0 10px;
+    font-size: .9rem;
+}
+.navigation #index--active, .navigation a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.navigation img:last-child {
+    transform: rotate(180deg);
+}
+
 /* postpage navigation */
 .post-navigation {
     justify-content: space-between;
@@ -495,22 +510,6 @@ footer.post__element img:first-child {
 .post-navigation span a:hover {
     color: black;
     font-weight: 400;
-}
-/* -- */
-.navigation a {
-    color: var(--secondary-color);
-    margin: 0 5px;
-    font-size: .9rem;
-}
-.navigation #index--active, .navigation a:hover {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-.navigation img:last-child {
-    transform: rotate(180deg);
-}
-.navigation img {
-    width: 25px;
 }
 
 /* For all the section titles */

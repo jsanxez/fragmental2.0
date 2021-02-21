@@ -477,7 +477,6 @@ footer.post__element img:first-child {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    /* margin-top: -0.8vw; */
 }
 .navigation img {
     width: 25px;
@@ -493,6 +492,11 @@ footer.post__element img:first-child {
 }
 .navigation img:last-child {
     transform: rotate(180deg);
+}
+
+/* index page navigation */
+.numbered-navigation {
+    margin-top: calc(var(--card-rmargin)*-1);
 }
 
 /* postpage navigation */
@@ -643,6 +647,12 @@ footer.post__element img:first-child {
     justify-content: flex-end;
     align-content: center;
     padding: 40px 0;
+}
+#footer .smedia a:first-child {
+    /* margin-bottom: 5px; */
+}
+#footer .smedia a:last-child {
+    /* margin-top: 5px; */
 }
 
 

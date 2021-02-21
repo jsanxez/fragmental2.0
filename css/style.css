@@ -182,19 +182,19 @@ body {
     height: 15px;
 }
 
-/* Cards (main) */
-main.main-index {
+/* Cards (main page) */
+main.cards-container {
     display: flex;
     flex-flow: row wrap;
     /* justify-content: center; */
     align-content: flex-start;
 }
 /* post page */
-main.main-post {
+main.post-wrapper {
     background: white;
     border-radius: 4px;
 }
-.main-post__element {
+.post__element {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -202,30 +202,30 @@ main.main-post {
     font-size: 0.7rem;
     padding: 10px 35px;
 }
-header.main-post__element {
+header.post__element {
     border-bottom: 3px solid var(--background);
 }
-header.main-post__element a {
+header.post__element a {
     color: var(--secondary-color);
 }
-footer.main-post__element {
+footer.post__element {
     border-top: 3px solid var(--background);
 }
-footer.main-post__element span {
+footer.post__element span {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
-footer.main-post__element img {
+footer.post__element img {
     width: 12px;
 }
-footer.main-post__element a {
+footer.post__element a {
     color: var(--softext);
 }
-footer.main-post__element img:first-child {
+footer.post__element img:first-child {
     margin-right: 4px;
 }
-#main-post__article {
+.post-content {
     font-family: 'Noto Sans', sans-serif;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -296,10 +296,10 @@ footer.main-post__element img:first-child {
     font-size: 0.7rem;
     height: 130px;
 }
-.card-header-main {
+.article-card__header {
     border-radius: 4px 4px 0 0;
 }
-.card-header-suggested {
+.suggested-card__header {
     border-radius: 4px;
 }
 /* suggested cards */
@@ -320,10 +320,10 @@ footer.main-post__element img:first-child {
     height: 100%;
     object-fit: cover;
 }
-.card__thumb-main {
+.article-card__thumb {
     border-radius: 4px 4px 0 0;
 }
-.card__thumb-suggested {
+.suggested-card__thumb {
     border-radius: 4px;
 }
 .card-meta__author, .card-meta__date {

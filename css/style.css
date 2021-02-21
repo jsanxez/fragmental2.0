@@ -192,6 +192,8 @@ main.cards-container {
 /* cards */
 .card {
     flex-grow: 1;
+    display: flex;
+    flex-flow: column;
     border-radius: 4px;
     background-color: white;
     box-shadow: 0px 2px 6px var(--soft-shadow);
@@ -266,6 +268,7 @@ main.cards-container {
     text-shadow: 0px 1px 2px var(--softext);
 }
 .card-text {
+    flex-grow: 1;
     padding:var(--card-padding);
     cursor: pointer;
 }

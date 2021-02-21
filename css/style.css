@@ -189,88 +189,6 @@ main.cards-container {
     /* justify-content: center; */
     align-content: flex-start;
 }
-/* post page */
-main.post-wrapper {
-    background: white;
-    border-radius: 4px;
-}
-.post__element {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    color: var(--softext);
-    font-size: 0.7rem;
-    padding: 10px 35px;
-}
-header.post__element {
-    border-bottom: 3px solid var(--background);
-}
-header.post__element a {
-    color: var(--secondary-color);
-}
-footer.post__element {
-    border-top: 3px solid var(--background);
-}
-footer.post__element span {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-footer.post__element img {
-    width: 12px;
-}
-footer.post__element a {
-    color: var(--softext);
-}
-footer.post__element img:first-child {
-    margin-right: 4px;
-}
-.post-content {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 35px;
-}
-#article__title {
-    color: var(--primary-color);
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-.article__sub-headings {
-    color: var(--primary-color);
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-.article__paragraph {
-    margin-bottom: 10px;
-}
-.article__thumb-wrap {
-    margin: 25px auto;
-    color: var(--softext);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-.article__thumb-wrap img {
-    display: block;
-    width: 100%;
-    max-height: 70vh;
-    object-fit: scale-down;
-    padding: 10px 0;
-    border-top: 1px dashed var(--background);
-    border-bottom: 1px dashed var(--background);
-}
-.thumb__caption--on {
-    padding: 5px 0;
-}
-.thumb__caption--off {
-    display: none;
-}
-
 /* cards */
 .card {
     flex-grow: 1;
@@ -386,6 +304,100 @@ footer.post__element img:first-child {
 .card-footer img {
     width: 12px;
     margin-right: 4px;
+}
+/* post page */
+main.post-wrapper {
+    background: white;
+    border-radius: 4px;
+}
+
+.post__element {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: var(--softext);
+    font-size: 0.7rem;
+    padding: 10px;
+}
+header.post__element {
+    border-bottom: 3px solid var(--background);
+}
+header.post__element a {
+    color: var(--secondary-color);
+}
+footer.post__element {
+    border-top: 3px solid var(--background);
+}
+footer.post__element span {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+footer.post__element img {
+    width: 12px;
+}
+footer.post__element a {
+    color: var(--softext);
+}
+footer.post__element img:first-child {
+    margin-right: 4px;
+}
+
+/* article border paddings */
+.post__element, .post-content {
+    padding-left: calc(var(--card-rmargin)*3);
+    padding-right: calc(var(--card-rmargin)*3);
+}
+
+.post-content {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+/* article image */
+.article__thumb-wrap {
+    margin: 25px auto;
+    color: var(--softext);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.article__thumb-wrap img {
+    display: block;
+    width: 100%;
+    max-height: 70vh;
+    object-fit: scale-down;
+    padding: 10px 0;
+    border-top: 1px dashed var(--background);
+    border-bottom: 1px dashed var(--background);
+}
+.thumb__caption--on {
+    padding: 5px 0;
+}
+.thumb__caption--off {
+    display: none;
+}
+
+/*  article texts */
+#article__title {
+    color: var(--primary-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.article__sub-headings {
+    color: var(--primary-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.article__paragraph {
+    margin-bottom: 10px;
 }
 
 /* Sidebar */

@@ -681,6 +681,29 @@ footer.post__element img:first-child {
     .sidebar__widget:last-child {
         margin-bottom: 0;
     }
+    #footer {
+        display: flex;
+        flex-flow: column;
+    }
+    .footer-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__brand {
+        margin-bottom: var(--card-padding);
+    }
+    .footer-content span {
+        text-align: center;
+    }
+    .footer-content small:first-child {
+        margin-right: 0;
+    }
+    #footer .smedia {
+        justify-content: center;
+        margin-top: var(--card-padding);
+    }
 }
 
 @media screen and (max-width: 200px) {

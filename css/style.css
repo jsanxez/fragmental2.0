@@ -377,6 +377,7 @@ footer.post__element img:first-child {
 }
 .thumb__caption--on {
     padding: 5px 0;
+    text-align: center;
 }
 .thumb__caption--off {
     display: none;

@@ -658,7 +658,8 @@ footer.post__element img:first-child {
 
 /* --------------------- media  queries -------------- */
 
-@media screen and (max-width: 600px) {
+/* phones */
+@media screen and (max-width: 425px) {
     body {
         display: block;
     }
@@ -678,6 +679,13 @@ footer.post__element img:first-child {
         margin-bottom: 0;
     }
 
+    /* post article margins */
+    .post__element, .post-content {
+        padding-left: calc(var(--card-rmargin)*1);
+        padding-right: calc(var(--card-rmargin)*1);
+    }
+
+    /* sidebar widgets */
     .sidebar__widget:last-child {
         margin-bottom: 0;
     }
@@ -706,5 +714,6 @@ footer.post__element img:first-child {
     }
 }
 
-@media screen and (max-width: 200px) {
+/* tablets */
+@media screen and (max-width: 1024px) {
 }

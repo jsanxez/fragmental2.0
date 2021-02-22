@@ -649,7 +649,7 @@ footer.post__element img:first-child {
 /* --------------------- media  queries -------------- */
 
 /* phones */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px /*425px*/) {
     body {
         display: block;
     }
@@ -660,14 +660,6 @@ footer.post__element img:first-child {
     .up-arrow-container, #footer {
         margin-top: var(--row-gap);
     }
-    /* horizontal card margins */
-    .article-card, .suggested-card {
-        margin: 0;
-        margin-bottom: var(--card-rmargin);
-    }
-    .article-card:last-child, .suggested-card:last-child {
-        margin-bottom: 0;
-    }
 
     /* post article margins */
     .post__element, .post-content {
@@ -675,9 +667,17 @@ footer.post__element img:first-child {
         padding-right: calc(var(--card-padding));
     }
 
+    #sidebar {
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--card-rmargin);
+        justify-content: center;
+    }
     /* sidebar widgets */
-    .sidebar__widget:last-child {
-        margin-bottom: 0;
+    .sidebar__widget {
+        flex-grow: 1;
+        width: 260px;
+        margin: 0;
     }
     #footer {
         display: flex;

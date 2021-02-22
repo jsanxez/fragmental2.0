@@ -88,8 +88,8 @@ body {
 .navbar {
     display: flex;
     flex-flow: row wrap;
+    gap: 10px;
     justify-content: center;
-    align-content: flex-start;
 }
 .navbar a {
     display: block;
@@ -98,9 +98,6 @@ body {
     color: var(--softext);
     font-weight: 400;
     font-size: 0.8rem;
-    /* margin: 0px 7px 9px 7px; */
-    margin:0 1%;
-    margin-bottom: 9px;
     padding: 1px 10px;
     transition: background-color .4s ease
 }

@@ -662,6 +662,10 @@ footer.post__element img:first-child {
         justify-content: center;
     }
     /* sidebar widgets */
+
+    #sidebar #about {
+        max-width: 460px;
+    }
     .sidebar__widget {
         flex-grow: 1;
         width: 260px;
@@ -687,8 +691,4 @@ footer.post__element img:first-child {
     #footer .smedia {
         justify-content: center;
     }
-}
-
-/* tablets */
-@media screen and (max-width: 1024px) {
 }

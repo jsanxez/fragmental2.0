@@ -637,7 +637,7 @@ footer.post__element img:first-child {
 /* --------------------- media  queries -------------- */
 
 /* phones */
-@media screen and (max-width: 768px /*425px*/) {
+@media screen and (max-width: 900px /*425px 768px*/) {
     body {
         display: block;
     }
@@ -664,7 +664,7 @@ footer.post__element img:first-child {
     /* sidebar widgets */
 
     #sidebar #about {
-        max-width: 460px;
+        max-width: 560px;
     }
     .sidebar__widget {
         flex-grow: 1;

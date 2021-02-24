@@ -637,6 +637,13 @@ footer.post__element img:first-child {
 
 /* phones */
 @media screen and (max-width: 900px /*425px 768px*/) {
+    :root {
+        /* Gaps */
+        --row-gap: 35px; /* 40px 6vh */
+        /* borders, margins and paddings */
+        --card-padding: 18px;
+        --card-rmargin: 2vh;
+    }
     body {
         display: block;
     }
@@ -650,8 +657,8 @@ footer.post__element img:first-child {
 
     /* post article margins */
     .post__element, .post-content {
-        padding-left: calc(var(--card-padding));
-        padding-right: calc(var(--card-padding));
+        padding-left: calc(var(--card-rmargin)*1.5);
+        padding-right: calc(var(--card-rmargin)*1.5);
     }
 
     #sidebar {

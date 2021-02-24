@@ -564,6 +564,7 @@ footer.post__element img:first-child {
     border-radius: 4px;
     box-shadow: 0px 2px 5px var(--soft-shadow);
     font-family: 'Nunito', sans-serif;
+    font-size: 0.8em;
     resize: none;
     padding: 2px 10px;
     margin-top: calc(var(--row-gap)/2);

@@ -6,8 +6,8 @@
     --softext: #4c4c4c;
     --soft-shadow: #d6d6d6;
     /* Gaps */
-    --col-gap: 4vh; /* 20px or 4vh */
-    --row-gap: 6vh; /* 6vh */
+    --col-gap: 25px; /* 20px or 4vh */
+    --row-gap: 45px; /* 40px 6vh */
     /* borders, margins and paddings */
     --card-padding: 18px;
     --full-rpadding: 4vw 7vw;

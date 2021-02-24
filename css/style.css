@@ -11,7 +11,7 @@
     /* borders, margins and paddings */
     --full-rpadding: 4vw 7vw;
     --card-padding: 18px;
-    --card-rmargin: 2vh;
+    --card-rmargin: 1vw;
 }
 
 * {

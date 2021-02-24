@@ -9,8 +9,8 @@
     --col-gap: 25px; /* 20px or 4vh */
     --row-gap: 45px; /* 40px 6vh */
     /* borders, margins and paddings */
-    --card-padding: 18px;
     --full-rpadding: 4vw 7vw;
+    --card-padding: 18px;
     --card-rmargin: 2vh;
 }
 
@@ -406,8 +406,8 @@ footer.post__element img:first-child {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 0 var(--col-gap);
-    padding-bottom: var(--col-gap);
+    padding: 0 var(--card-padding);
+    padding-bottom: var(--card-padding);
 }
 #about .about__image {
     display: block;
@@ -435,7 +435,6 @@ footer.post__element img:first-child {
     border-radius: 4px;
     box-shadow: 0px 2px 6px var(--soft-shadow);
     padding: var(--card-padding);
-    /* padding: var(--col-gap); */
     margin-bottom: var(--card-rmargin);
 }
 .widget__items-wrapper {

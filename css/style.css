@@ -657,8 +657,8 @@ footer.post__element img:first-child {
 
     /* post article margins */
     .post__element, .post-content {
-        padding-left: calc(var(--card-rmargin)*1.5);
-        padding-right: calc(var(--card-rmargin)*1.5);
+        padding-left: calc(var(--card-rmargin)*2);
+        padding-right: calc(var(--card-rmargin)*2);
     }
 
     #sidebar {

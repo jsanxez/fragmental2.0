@@ -55,7 +55,6 @@ body {
     cursor: pointer;
 }
 #header__brand img {
-    /* border: 1px solid red; */
     width: 38px;
 }
 #header__brand h1 {
@@ -114,9 +113,6 @@ body {
     justify-content: flex-end;
     align-items: flex-start;
     align-content: flex-start;
-}
-.smedia a {
-    /* border-radius: 50%; */
 }
 .smedia img {
     display: block;
@@ -180,7 +176,6 @@ main.cards-container {
     display: flex;
     flex-flow: row wrap;
     gap: var(--card-rmargin);
-    /* justify-content: center; */
 }
 
 /* cards */
@@ -195,10 +190,6 @@ main.cards-container {
     width: 260px;
 }
 
-.suggested-card:last-child {
-    /* margin-right: 0; */
-    margin-bottom: 0;
-}
 .card-header {
     position: relative;
     color: white;
@@ -388,11 +379,10 @@ footer.post__element img:first-child {
     color: var(--primary-color);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 .article__paragraph {
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 /* Sidebar */
@@ -510,7 +500,6 @@ footer.post__element img:first-child {
 /* Comments section */
 #comments-section {
     grid-column: 1/2;
-    /* background: pink; */
 }
 .comment-wrapper {
     display:flex;
@@ -636,8 +625,8 @@ footer.post__element img:first-child {
 
 /* --------------------- media  queries -------------- */
 
-/* phones */
 @media screen and (max-width: 900px /*425px 768px*/) {
+
     :root {
         /* Gaps */
         --row-gap: 35px; /* 40px 6vh */
@@ -678,6 +667,7 @@ footer.post__element img:first-child {
         width: 260px;
         margin: 0;
     }
+
     #footer {
         display: flex;
         flex-flow: column;

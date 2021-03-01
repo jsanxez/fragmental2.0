@@ -156,7 +156,7 @@ body {
     background-color: white;
     border-radius: 25px;
     padding: 4px 10px;
-    box-shadow: 0px 2px 5px var(--soft-shadow);
+    box-shadow: 0px 2px 6px var(--soft-shadow);
 }
 #search__wrap input[type=search] {
     background-color: white;
@@ -188,6 +188,7 @@ main.cards-container {
     box-shadow: 0px 2px 6px var(--soft-shadow);
     font-family: 'Nunito', sans-serif;
     width: 260px;
+    transition: all .4s ease;
 }
 
 .card-header {
@@ -722,4 +723,12 @@ footer.post__element img:first-child {
     #footer .smedia {
         justify-content: center;
     }
+}
+
+
+/* Effects */
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 6px 4px var(--soft-shadow);
 }

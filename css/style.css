@@ -9,6 +9,9 @@
     --col-gap: 25px; /* 20px or 4vh */
     --row-gap: 45px; /* 40px 6vh */
     /* borders, margins and paddings */
+    --border-radius-1: 4px;
+    --border-radius-2: 25px;
+    --border-radius-3: 50%;
     --full-rpadding: 4vw 7vw;
     --card-padding: 18px;
     --card-rmargin: 1vw;
@@ -90,19 +93,16 @@ body {
     gap: 10px;
     justify-content: center;
 }
-.navbar a {
+
+.navbar__items {
     display: block;
     border: 1px solid var(--secondary-color);
-    border-radius: 50px;
+    border-radius: var(--border-radius-2);
     color: var(--softext);
     font-weight: 400;
     font-size: 0.8rem;
     padding: 1px 10px;
     transition: background-color .4s ease
-}
-.navbar a:hover {
-    color: white;
-    background-color: var(--secondary-color);
 }
 
 /* social media items */
@@ -130,7 +130,7 @@ body {
 }
 .tabs__button  {
     color: black;
-    border-radius: 25px;
+    border-radius: var(--border-radius-2);
     margin: 0px var(--card-rmargin);
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -154,7 +154,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-radius: 25px;
+    border-radius: var(--border-radius-2);
     padding: 4px 10px;
     box-shadow: 0px 2px 6px var(--soft-shadow);
 }
@@ -183,7 +183,7 @@ main.cards-container {
     flex-grow: 1;
     display: flex;
     flex-flow: column;
-    border-radius: 4px;
+    border-radius: var(--border-radius-1);
     background-color: white;
     box-shadow: 0px 2px 6px var(--soft-shadow);
     font-family: 'Nunito', sans-serif;
@@ -199,10 +199,10 @@ main.cards-container {
     height: 130px;
 }
 .article-card__header {
-    border-radius: 4px 4px 0 0;
+    border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
 }
 .suggested-card__header {
-    border-radius: 4px;
+    border-radius: var(--border-radius-1);
 }
 /* suggested cards */
 .card-header__title {
@@ -212,7 +212,7 @@ main.cards-container {
     right: 0px;
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
+    border-radius: var(--border-radius-1);
     font-size: 0.9rem;
     font-weight: 600;
     padding: 10px var(--card-padding);
@@ -223,10 +223,10 @@ main.cards-container {
     object-fit: cover;
 }
 .article-card__thumb {
-    border-radius: 4px 4px 0 0;
+    border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
 }
 .suggested-card__thumb {
-    border-radius: 4px;
+    border-radius: var(--border-radius-1);
 }
 .card-meta__author, .card-meta__date {
     display: flex;
@@ -293,7 +293,7 @@ main.cards-container {
 /* post page */
 main.post-wrapper {
     background: white;
-    border-radius: 4px;
+    border-radius: var(--border-radius-1);
 }
 
 .post__element {
@@ -405,7 +405,7 @@ footer.post__element img:first-child {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: var(--border-radius-3);
     border: 1px solid var(--secondary-color)
 }
 #about hr {
@@ -423,7 +423,7 @@ footer.post__element img:first-child {
 /* sidebar widgets */
 .sidebar__widget {
     background-color: white;
-    border-radius: 4px;
+    border-radius: var(--border-radius-1);
     box-shadow: 0px 2px 6px var(--soft-shadow);
     padding: var(--card-padding);
     margin-bottom: var(--card-rmargin);
@@ -512,7 +512,7 @@ footer.post__element img:first-child {
     margin-left: 40px;
 }
 .comment-wrapper__avatar {
-    border-radius: 50%;
+    border-radius: var(--border-radius-3);
     width: 35px;
     height: 35px;
     object-fit: cover;
@@ -551,7 +551,7 @@ footer.post__element img:first-child {
 }
 #comments-section textarea {
     width: 100%;
-    border-radius: 4px;
+    border-radius: var(--border-radius-1);
     box-shadow: 0px 2px 5px var(--soft-shadow);
     font-family: 'Nunito', sans-serif;
     font-size: 0.8em;
@@ -565,7 +565,7 @@ footer.post__element img:first-child {
     float: right;
     background-color: var(--secondary-color);
     color: white;
-    border-radius: 25px;
+    border-radius: var(--border-radius-2);
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -577,7 +577,7 @@ footer.post__element img:first-child {
 
 /* .tabs__button  {
     color: black;
-    border-radius: 25px;
+    border-radius: var(border-radius-2);
     margin: 0px var(--card-rmargin);
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -614,7 +614,7 @@ footer.post__element img:first-child {
     align-items: flex-end;
 }
 .up-arrow-wrapper {
-    border-radius: 50%;
+    border-radius: var(--border-radius-3);
     height: 35px;
     box-shadow: 0px 2px 5px darkgrey;
 
@@ -727,6 +727,11 @@ footer.post__element img:first-child {
 
 
 /* Effects */
+
+.navbar__items:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
 
 .card:hover {
     transform: translateY(-2px);

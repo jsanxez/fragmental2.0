@@ -729,6 +729,6 @@ footer.post__element img:first-child {
 /* Effects */
 
 .card:hover {
-    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
     box-shadow: 0px 2px 6px 4px var(--soft-shadow);
 }

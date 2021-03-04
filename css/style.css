@@ -669,7 +669,9 @@ footer.post__element img:first-child {
         /* borders, margins and paddings */
         --card-padding: 18px;
         --card-rmargin: 2vh;
+        --full-rpadding: 4vw 7vw;
     }
+
     body {
         display: block;
     }
@@ -723,6 +725,13 @@ footer.post__element img:first-child {
     }
     #footer .smedia {
         justify-content: center;
+    }
+}
+
+/*  Mobiles */
+@media screen and (max-width: 425px /*425px 768px*/) {
+    :root {
+        --full-rpadding: 4vw 3vw;
     }
 }
 

@@ -733,6 +733,12 @@ footer.post__element img:first-child {
     :root {
         --full-rpadding: 4vw 3vw;
     }
+
+    /* article border paddings */
+    .post__element, .post-content {
+        padding-left: calc(var(--card-rmargin)*2);
+        padding-right: calc(var(--card-rmargin)*2);
+    }
 }
 
 

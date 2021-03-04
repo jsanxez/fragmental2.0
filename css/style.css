@@ -372,7 +372,7 @@ footer.post__element img:first-child {
 #article__title {
     color: var(--primary-color);
     font-family: 'Fira Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }
@@ -382,9 +382,10 @@ footer.post__element img:first-child {
     font-weight: 500;
     margin: 10px 0;
 }
-.article__paragraph {
-    margin: 10px 0;
-}
+.sub-heading { font-size: 1.1rem;}
+.sub-sub-heading { font-size: 1rem; }
+.sub-sub-sub-heading { font-size: .9rem; }
+.article__paragraph { margin: 10px 0; }
 
 /* Sidebar */
 #sidebar {

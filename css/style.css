@@ -387,6 +387,13 @@ footer.post__element img:first-child {
 .sub-sub-sub-heading { font-size: .9rem; }
 .article__paragraph { margin: 10px 0; }
 
+blockquote {
+    font-style: italic;
+    color: var(--softext);
+    border-left: 4px solid var(--soft-shadow);
+    padding: var(--card-padding);
+}
+
 /* Sidebar */
 #sidebar {
     grid-column: 2/3;

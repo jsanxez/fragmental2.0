@@ -224,6 +224,7 @@ main.cards-container {
 }
 .article-card__thumb {
     border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+    cursor: pointer;
 }
 .suggested-card__thumb {
     border-radius: var(--border-radius-1);

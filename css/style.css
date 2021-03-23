@@ -28,6 +28,7 @@
 html {
     padding: var(--full-rpadding);
     padding-bottom: 0;
+    font-size: 1.1rem;
 }
 body {
     display: grid;

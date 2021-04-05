@@ -2,12 +2,18 @@
     /* colours */
     --primary-color: #005ea6;
     --secondary-color: #1894f2;
+
     --background: #f1f1f1;
     --softext: #4c4c4c;
     --soft-shadow: #d6d6d6;
+
+    /* Fonts */
+    --special-font: 'Nunito Sans', sans-serif;
+    --common-font: 'Open Sans', sans-serif;
     /* Gaps */
     --col-gap: 25px; /* 20px or 4vh */
     --row-gap: 45px; /* 40px 6vh */
+
     /* borders, margins and paddings */
     --border-radius-1: 4px;
     --border-radius-2: 25px;
@@ -36,7 +42,7 @@ body {
     grid-column-gap: var(--col-gap);
     grid-row-gap: var(--row-gap);
     background-color: var(--background);
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--special-font);
     font-size: 100%;
     margin: auto;
     margin-bottom: 0;
@@ -62,7 +68,7 @@ body {
     width: 38px;
 }
 #header__brand h1 {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--special-font);
     font-weight: 800;
     font-size: 1.5rem;
     margin-left: 10px;
@@ -100,7 +106,7 @@ body {
     border: 1px solid var(--secondary-color);
     border-radius: var(--border-radius-2);
     color: var(--softext);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.8rem;
     padding: 1px 10px;
     transition: background-color .4s ease
@@ -133,7 +139,6 @@ body {
     color: black;
     border-radius: var(--border-radius-2);
     margin: 0px var(--card-rmargin);
-    font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 1rem;
     padding: 0px 10px;
@@ -187,7 +192,7 @@ main.cards-container {
     border-radius: var(--border-radius-1);
     background-color: white;
     box-shadow: 0px 2px 6px var(--soft-shadow);
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--special-font);
     width: 260px;
     transition: all .4s ease;
 }
@@ -258,13 +263,13 @@ main.cards-container {
 }
 .card-text__title {
     color: var(--primary-color);
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--special-font);
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 .card-text p {
     color: var(--softext);
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--common-font);
     font-size: 0.8rem;
     line-height: 1.5;
     margin-top: 4px;
@@ -337,7 +342,7 @@ footer.post__element img:first-child {
 }
 
 .post-content {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--common-font);
     font-size: 0.9rem;
     line-height: 1.5;
     text-align: justify;
@@ -349,7 +354,7 @@ footer.post__element img:first-child {
 .article__thumb-wrap {
     margin: 25px auto;
     color: var(--softext);
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--special-font);
     font-weight: 300;
     font-style: italic;
 }
@@ -374,14 +379,14 @@ footer.post__element img:first-child {
 /*  article texts */
 #article__title {
     color: var(--primary-color);
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--special-font);
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }
 .article__sub-headings {
     color: var(--primary-color);
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--special-font);
     font-weight: 500;
     margin: 10px 0;
 }
@@ -564,7 +569,7 @@ blockquote {
     width: 100%;
     border-radius: var(--border-radius-1);
     box-shadow: 0px 2px 5px var(--soft-shadow);
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--special-font);
     font-size: 0.8em;
     resize: none;
     padding: 2px 10px;
@@ -577,7 +582,7 @@ blockquote {
     background-color: var(--secondary-color);
     color: white;
     border-radius: var(--border-radius-2);
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--special-font);
     font-weight: 400;
     font-size: 1rem;
     padding: 1px 15px;
@@ -590,7 +595,7 @@ blockquote {
     color: black;
     border-radius: var(border-radius-2);
     margin: 0px var(--card-rmargin);
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--special-font);
     font-weight: 600;
     font-size: 1rem;
     padding: 0px 10px;

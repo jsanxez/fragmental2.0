@@ -493,16 +493,11 @@ blockquote {
     background-color: #8bc9f8;
 } */
 
-/* Suggested posts */
+/* Suggested section */
 #suggested-section {
     grid-column: 1/2;
 }
 .suggested-card-container {
-    display: flex;
-    flex-flow: row wrap;
-    gap: var(--card-rmargin);
-    justify-content: space-between;
-    align-items: flex-start;
     margin-top: calc(var(--row-gap)/2);
 }
 /* up arrow container */

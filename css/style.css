@@ -73,7 +73,6 @@ body {
 }
 
 #hamburger {
-    position: relative;
     height: 1.5em;
     width: 25px;
 }
@@ -91,30 +90,23 @@ body {
 /* ---- Main Navigation ---- */
 
 #nav-cloud {
-    display: flex;
-    flex-flow: row wrap;
     gap: 10px;
-    justify-content: center;
     font-size: 0.875em;
     font-weight: 300;
 }
 .nav-cloud__tag {
     border: 1px solid var(--light-blue);
-    border-radius: var(--b-radius-2);
     color: var(--gray-300);
     padding: 0.075em .7em;
     transition: background-color .4s ease
 }
 
-/* social media items */
+/* social media */
 .social {
-    display:flex;
-    flex-flow: row wrap;
     gap: var(--card-padding);
-    justify-content: flex-end;
 }
 .social img {
-    height: 25px;
+    height: 1.5em;
 }
 
 /* Tabs and search input */
@@ -729,5 +721,7 @@ blockquote {
 .wrap {flex-wrap: wrap; }
 .nowrap {flex-wrap: nowrap; }
 .flex-justify-between { justify-content: space-between; }
+.flex-justify-center { justify-content: center; }
+.flex-justify-end { justify-content: flex-end; }
 .flex-align-content-start { align-content: flex-start; }
 .flex-grow-1 { flex-grow: 1; }

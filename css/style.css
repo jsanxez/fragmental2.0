@@ -111,14 +111,11 @@ body {
 
 /* Tabs and search input */
 #tabs {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
     align-items: flex-start;
     width: 100%;
     padding: 0 25%;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.1em; 
 }
 .tabs__item  {
     color: black;
@@ -137,9 +134,6 @@ body {
 
 /* search input */
 #search {
-    /* display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between; */
     background-color: white;
     padding: 4px 10px;
     box-shadow: 0px 2px 6px var(--gray-200);
@@ -722,6 +716,7 @@ blockquote {
 .nowrap {flex-wrap: nowrap; }
 .flex-justify-between { justify-content: space-between; }
 .flex-justify-center { justify-content: center; }
+.flex-justify-evenly { justify-content: space-evenly; }
 .flex-justify-end { justify-content: flex-end; }
 .flex-align-content-start { align-content: flex-start; }
 .flex-grow-1 { flex-grow: 1; }

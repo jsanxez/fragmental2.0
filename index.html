@@ -65,51 +65,146 @@
     <!-- Tabs and search input -->
 
     <div id="tabs">
-        <a class="tabs__item rounded" href="#">Populares</a>
-        <a class="tabs__item  rounded tabs__item--active" href="#">Recientes</a>
-        <a class="tabs__item rounded" href="#">Antiguos</a>
+        <a class="tabs__item rounded-2" href="#">Populares</a>
+        <a class="tabs__item  rounded-2 tabs__item--active" href="#">Recientes</a>
+        <a class="tabs__item rounded-2" href="#">Antiguos</a>
     </div>
 
-    <div id="search" class="rounded">
+    <div id="search" class="rounded-2 dflex-row nowrap flex-justify-between">
         <input type="search" name="search" placeholder="Search..." aria-label="search">
         <img src="img/loupe.svg" alt="">
     </div>
 
     <!-- Main Content (cards) -->
 
-    <main class="cards-container">
-        <article class="card article-card">
-            <div class="card-header article-card__header">
-                <img class="card__thumb article-card__thumb" onclick="location.href='post.html'" src="img/screen-post.jpg" alt="post image">
-                <div class="card-meta__author">
+    <main class="cards-container dflex-row wrap">
+        <article class="card flex-grow-1 rounded-1 bshadow-1">
+            <div class="card-header relative">
+                <img src="img/spaceman.jpg" class="card__thumb" alt="post image">
+                <a href="#" class="meta-info absolute left ml-1">
                     <img src="img/user.svg" alt="">
-                    <span>jsanchez</span>
-                </div>
-                <div class="card-meta__date">
+                    <span>Jsanchez</span>
+                </a>
+                <a href="#" class="meta-info absolute right mr-1">
                     <img src="img/clock.svg" alt="">
                     <span>2 months ago</span>
-                </div>
+                </a>
             </div>
-            <div class="card-text" onclick="location.href='post.html'">
-                <h2 class="card-text__title">Fundamentos basicos en linux core parte I - III</h2>
-                <p>Lorem ipsum dolor sit amet,
-                finibus orci malesuada id. Nullam non aliquam turpis. Aliquam
+            <div class="card-body">
+                <a href="post.html"><h2 class="card__title">Fundamentos basicos en linux core parte I - III</h2></a>
+                <p class="card__description mt-1">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Nunc sodales laoreet justo, nec
+                finibus orci malesuada id. Nullam non aliquam turpis. Aliquam
                 finibus orci malesuada id. Nullam non aliquam turpis. Aliquam
                 porttitor tempus...</p>
             </div>
-            <div class="card-footer">
-                <div class="card-footer__tags">
+            <div class="card-footer dflex-row nowrap flex-justify-between">
+                <div class="meta-info">
                     <img src="img/tags.svg" alt="">
                     <a href="#">Git, </a><a href="#">Tools, </a><a href="#">Open Source</a>
                 </div>
-                <div class="card-footer__comments">
+                <a href="#" class="meta-info">
                     <img src="img/comment.svg" alt="">
-                    <a href="#">13</a>
-                </div>
+                    <span href="#">13</span>
+                </a>
             </div>
         </article>
-        <article class="card article-card">
+
+        <article class="card flex-grow-1 rounded-1 bshadow-1">
+            <div class="card-header relative">
+                <img src="img/spaceman.jpg" class="card__thumb" alt="post image">
+                <a href="#" class="meta-info absolute left ml-1">
+                    <img src="img/user.svg" alt="">
+                    <span>Jsanchez</span>
+                </a>
+                <a href="#" class="meta-info absolute right mr-1">
+                    <img src="img/clock.svg" alt="">
+                    <span>2 months ago</span>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="post.html"><h2 class="card__title">Fundamentos basicos en linux core parte I - III</h2></a>
+                <p class="card__description mt-1">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Nunc sodales laoreet justo, nec
+                finibus orci malesuada id. Nullam non aliquam turpis. Aliquam
+                finibus orci malesuada id. Nullam non aliquam turpis. Aliquam
+                porttitor tempus...</p>
+            </div>
+            <div class="card-footer dflex-row nowrap flex-justify-between">
+                <div class="meta-info">
+                    <img src="img/tags.svg" alt="">
+                    <a href="#">Git, </a><a href="#">Tools, </a><a href="#">Open Source</a>
+                </div>
+                <a href="#" class="meta-info">
+                    <img src="img/comment.svg" alt="">
+                    <span href="#">13</span>
+                </a>
+            </div>
+        </article>
+
+        <article class="card flex-grow-1 rounded-1 bshadow-1">
+            <div class="card-header relative">
+                <img src="img/spaceman.jpg" class="card__thumb" alt="post image">
+                <a href="#" class="meta-info absolute left ml-1">
+                    <img src="img/user.svg" alt="">
+                    <span>Jsanchez</span>
+                </a>
+                <a href="#" class="meta-info absolute right mr-1">
+                    <img src="img/clock.svg" alt="">
+                    <span>2 months ago</span>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="post.html"><h2 class="card__title">Fundamentos basicos en linux core parte I - III</h2></a>
+                <p class="card__description mt-1">Lorem ipsum dolor sit amet,
+                finibus orci malesuada id. Nullam non aliquam turpis. Aliquam
+                consectetur adipiscing elit. Nunc sodales laoreet justo, nec
+                porttitor tempus...</p>
+            </div>
+            <div class="card-footer dflex-row nowrap flex-justify-between">
+                <div class="meta-info">
+                    <img src="img/tags.svg" alt="">
+                    <a href="#">Git, </a><a href="#">Tools, </a><a href="#">Open Source</a>
+                </div>
+                <a href="#" class="meta-info">
+                    <img src="img/comment.svg" alt="">
+                    <span href="#">13</span>
+                </a>
+            </div>
+        </article>
+
+        <article class="card flex-grow-1 rounded-1 bshadow-1">
+            <div class="card-header relative">
+                <img src="img/spaceman.jpg" class="card__thumb" alt="post image">
+                <a href="#" class="meta-info absolute left ml-1">
+                    <img src="img/user.svg" alt="">
+                    <span>Jsanchez</span>
+                </a>
+                <a href="#" class="meta-info absolute right mr-1">
+                    <img src="img/clock.svg" alt="">
+                    <span>2 months ago</span>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="post.html"><h2 class="card__title">Fundamentos basicos en linux core parte I - III</h2></a>
+                <p class="card__description mt-1">Lorem ipsum dolor sit amet,
+                finibus orci malesuada id. Nullam non aliquam turpis. Aliquam
+                consectetur adipiscing elit. Nunc sodales laoreet justo, nec
+                porttitor tempus...</p>
+            </div>
+            <div class="card-footer dflex-row nowrap flex-justify-between">
+                <div class="meta-info">
+                    <img src="img/tags.svg" alt="">
+                    <a href="#">Git, </a><a href="#">Tools, </a><a href="#">Open Source</a>
+                </div>
+                <a href="#" class="meta-info">
+                    <img src="img/comment.svg" alt="">
+                    <span href="#">13</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- <article class="card article-card">
             <div class="card-header article-card__header">
                 <img class="card__thumb article-card__thumb" src="img/unsplash.jpg" alt="post image">
                 <div class="card-meta__author">
@@ -348,7 +443,7 @@
                     <a href="#">13</a>
                 </div>
             </div>
-        </article>
+        </article> -->
     </main>
     <!-- end main -->
 

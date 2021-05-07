@@ -90,7 +90,7 @@ body {
     width: 50%;
 }
 
-/* ---- Main Navigation ---- */
+/* ==== Main Navigation ==== */
 
 #nav-cloud {
     gap: 10px;
@@ -111,7 +111,7 @@ body {
 }
 .social img {
     display: block;
-    height: 1.6em;
+    height: 1.5625em;
 }
 
 /* Tabs and search input */
@@ -317,44 +317,23 @@ blockquote {
     font-size: .95em;
 }
 
-/* navigation */
-.navigation {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
+/* ==== navigation ====*/
+
 .navigation img {
-    width: 25px;
+    height: 1.5625em;
 }
 .navigation a {
     color: var(--light-blue);
     margin: 0 10px;
-    font-size: .9rem;
 }
-.navigation #index--active, .navigation a:hover {
+.navigation #index--active {
     color: var(--dark-blue);
     font-weight: 600;
 }
-.navigation img:last-child {
-    transform: rotate(180deg);
-}
 
 /* postpage navigation */
-.post-navigation {
-    justify-content: space-between;
-}
-.post-navigation span {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-.post-navigation span a {
+.navigation span a {
     color: black;
-}
-.post-navigation span a:hover {
-    color: black;
-    font-weight: 400;
 }
 
 /* For all the section titles */
@@ -493,7 +472,7 @@ blockquote {
 }
 .legal-wrapper small, .legal-wrapper small a {
     color: var(--dark-blue);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 #copyright { color: var(--gray-300); }
  

@@ -220,7 +220,6 @@ header.post__meta a {
     display: none;
 }
 
-/* -----> sin revisar  */
 
 /*  article texts */
 #heading-1 {
@@ -380,27 +379,6 @@ blockquote {
     float: right;
     margin-top: calc(var(--row-gap)/2);
 }
-
-/* reference guide code  */
-
-/* .tabs__item  {
-    color: black;
-    border-radius: var(border-radius-2);
-    margin: 0px var(--card-rmargin);
-    font-family: var(--special-font);
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 0px 10px;
-    transition: background-color .4s ease;
-}
-.tabs__item--active {
-    color: white;
-    background-color: var(--light-blue);
-}
-.tabs__item:hover {
-    color: white;
-    background-color: #8bc9f8;
-} */
 
 /* Suggested section */
 #suggested-section {

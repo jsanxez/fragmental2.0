@@ -166,6 +166,7 @@ main.cards-container .card {
     color: white;
     background-color: var(--alpha-black);
     font-weight: 600;
+    padding: 10px 18px;
 }
 
 /* posted article */
@@ -180,7 +181,7 @@ main.post {
     padding: 10px;
 }
 header.post__meta a {
-    /* color: var(--light-blue); */
+    color: var(--light-blue);
 }
 
 /* article border paddings */
@@ -312,7 +313,7 @@ blockquote {
 /* For all the section titles */
 .section__title {
     color: var(--dark-blue);
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -323,8 +324,8 @@ blockquote {
 .comment-wrapper {
     display:flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    margin-top: calc(var(--row-gap)/2);
+    /* justify-content: center; */
+     margin-top: calc(var(--row-gap)/2);
 }
 .comment-wrapper--answer {
     margin-left: 40px;
@@ -336,12 +337,9 @@ blockquote {
     object-fit: cover;
     margin-right: 5px;
 }
-.comment-wrapper__text {
-    width: 100%;
-}
 .comment-wrapper__text p {
     color: var(--gray-300);
-    font-size: 0.8rem;
+    font-size: .9em;
     margin-top: 4px;
 }
 .comment-wrapper__details {
@@ -355,12 +353,12 @@ blockquote {
 }
 .comment-wrapper__details div span {
     color: var(--dark-blue);
-    font-size: 0.8rem;
+    font-size: .9em;
     font-weight: 600;
 }
 .comment-wrapper__details div time {
     color: var(--light-blue);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 400;
 }
 .comment-wrapper__details img {
@@ -372,7 +370,7 @@ blockquote {
     border-radius: var(--b-radius-1);
     box-shadow: 0px 2px 5px var(--gray-200);
     font-family: var(--special-font);
-    font-size: 0.8em;
+    font-size: .9em;
     resize: none;
     padding: 2px 10px;
     margin-top: calc(var(--row-gap)/2);

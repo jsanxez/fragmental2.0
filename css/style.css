@@ -186,8 +186,8 @@ header.post__meta a {
 
 /* article border paddings */
 .post__meta, .post-body {
-    padding-left: calc(var(--card-rmargin)*3);
-    padding-right: calc(var(--card-rmargin)*3);
+    padding-left: calc(var(--card-rmargin)*2);
+    padding-right: calc(var(--card-rmargin)*2);
 }
 
 .post-body {
@@ -398,7 +398,6 @@ blockquote {
     border-radius: var(--b-radius-3);
     height: 35px;
     box-shadow: 0px 2px 5px darkgrey;
-
 }
 .up-arrow-wrapper img {
     width: 35px;

@@ -25,6 +25,8 @@
     --margin-1: 18px;
     --card-rmargin: 1vw;
 
+    --sp-5: 2rem;
+
     --text-shadow-1: 0px 2px 5px var(--gray-300);
 }
 
@@ -36,6 +38,11 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+a {
+    color: black;
+}
+
 html {
     padding: var(--full-rpadding);
     padding-bottom: 0;
@@ -60,12 +67,14 @@ body {
     grid-column: 1/3;
     font-size: 1.625em;
     font-weight: 800;
+    position: relative;
 }
 
 #brand{
     display: flex;
     align-items: center;
     color: var(--dark-blue);
+    z-index: 2;
 }
 #brand .logo {
     height: 1.5em;
@@ -75,9 +84,18 @@ body {
     margin-left: 0.25em;
 }
 
+.menu {
+  display: none;
+  font-size: 1.1rem;
+}
+
 #hamburger {
+    position:absolute;
+    top: 0;
+    right: 0;
     height: 1.5em;
     width: 25px;
+    z-index: 1;
 }
 #hamburger::before, #hamburger::after, #hamburger .line {
     content: "";
@@ -89,6 +107,32 @@ body {
 #hamburger::after {
     width: 50%;
 }
+
+.toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.0em;
+  height: 2.0em;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggler:checked ~ .menu{
+  display: inherit;
+  position: absolute;
+  background-color: pink;
+  width: 100%;
+}
+
+.toggler:checked ~ .menu > ul{ margin: var(--sp-5) auto; }
+.toggler:checked ~ .menu .menu-item {
+  line-height: 2;
+  text-align: center;
+}
+
+
 
 /* ==== Main Navigation ==== */
 

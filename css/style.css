@@ -215,9 +215,7 @@ main.cards-container .card {
 
 /* posted article */
 
-main.post {
-    background: white;
-}
+main.post { background: white;}
 
 .post__meta {
     color: var(--gray-300);
@@ -669,5 +667,7 @@ blockquote {
 .flex-align-content-start { align-content: flex-start; }
 .flex-align-content-center { align-content: center; }
 .flex-grow-1 { flex-grow: 1; }
+
+.align-self-start {align-self: start;}
 
 .dblock {display: block; }

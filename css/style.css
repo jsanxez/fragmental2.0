@@ -84,6 +84,7 @@ body {
     margin-left: 0.25em;
 }
 
+/* hamburger menu */
 .menu {
   display: none;
   font-size: 1.1rem;
@@ -131,7 +132,7 @@ body {
   line-height: 2;
   text-align: center;
 }
-
+/* end of hamburger menu */
 
 
 /* ==== Main Navigation ==== */
